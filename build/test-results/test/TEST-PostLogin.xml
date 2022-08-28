@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PostLogin" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-27T17:45:43" hostname="ZUP-6050" time="1.986">
+  <properties/>
+  <testcase name="loginIncorretPassword()" classname="PostLogin" time="1.986"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "eve.holt@reqres.in",
+    "password": "xxxxxx"
+}
+HTTP/1.1 200 OK
+Date: Sat, 27 Aug 2022 17:45:44 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=jK4WWHjCiCmlP5JhbzwHrN9bcVGp6%2B7%2BT1wta7V51Ra%2FpUL9q92pg9qvTHyBboUGjtqecmRBdRAVjI5nV2jKjX62n6pUf811b3X6lbNO%2FyMPofxcRb%2BPvaK7UA%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 74169f6679d58de2-MIA
+
+{
+    "token": "QpwL5tke4Pnpja7X4"
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
