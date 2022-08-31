@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class PostRegister</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class PostRegister</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; PostRegister</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5.308s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">registerFailTest()</td>
+<td class="success">1.838s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">registerUserNotFound()</td>
+<td class="success">3.470s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>RODANDO TODOS OS TESTES
+ANTES DE CADA TESTE, ME CHAME
+HTTP/1.1 200 OK
+Date: Wed, 31 Aug 2022 22:24:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=uT1LeKdPREfPmzlJ2FTkSHpc4wSafCF7xfg9C4jjthqkutK1QiRDREQ1nZ1xpA%2BioQ1WwKjm1IEzugtUGxWkIwslTSOB6oYavs5sGfSC7KKf6m5RkbqE4dIsNg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 74392d4d6f859ab7-MIA
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Bearer QpwL5tke4Pnpja7X4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;email&quot;: &quot;teste@reqres.in&quot;,
+    &quot;password&quot;: null
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 31 Aug 2022 22:24:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q&quot;
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=5phksyEu3xeCa%2FfSB%2FHSGVKJIu9whNF0YEQ9MiHN11j%2F346nba9FL1SQAUUJVGS00Do37cNW7N3sqtZYR9y%2BnL1d%2BaMA164pwUQMijLEGcvx0a5Tv6W5iD%2F3yA%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 74392d561b0021b5-MIA
+
+{
+    &quot;error&quot;: &quot;Missing password&quot;
+}
+ANTES DE CADA TESTE, ME CHAME
+HTTP/1.1 200 OK
+Date: Wed, 31 Aug 2022 22:24:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=BEQdCmGoTHeO5nDwepGOyYMYPKBjItYZnRN68XbchPDlGDFHDtF8BEI4DSp62dUwpQ04mloWgHAzHe45K1w8ShiZs2ul%2F1o48AR%2FFhb%2BdiQgGDOYf0gkdZKDAg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 74392d5c7ada0287-MIA
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Bearer QpwL5tke4Pnpja7X4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+    &quot;password&quot;: null
+}
+HTTP/1.1 400 Bad Request
+Date: Wed, 31 Aug 2022 22:24:36 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q&quot;
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=HvmLv3DMUFCUS6GCJq9wAAK1sMOTO2Ohsu6Vc7yihKr9J6uTNGbliXEri0XXSC%2F9tBv%2FZtRYzLNH8M9aAppN%2BbsKTSy2Kf8mq7%2BgCPRMP0YGyGYf%2Fw9l6J10iQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 74392d61bce0227d-MIA
+
+{
+    &quot;error&quot;: &quot;Missing password&quot;
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.2</a> at 31 de ago. de 2022 19:24:36</p>
+</div>
+</div>
+</body>
+</html>

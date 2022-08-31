@@ -3,11 +3,17 @@ import io.restassured.module.kotlin.extensions.Extract
 import io.restassured.module.kotlin.extensions.Given
 import io.restassured.module.kotlin.extensions.Then
 import io.restassured.module.kotlin.extensions.When
+import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.TestInstance
 
-class PostRegister {
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+class PostRegister : Base() {
+
+    private val URL_POST_REGISTER = "register"
     fun register01() {
         Given {
+            spec(specBase())
             contentType(ContentType.JSON)
             body(
                 "{\n" +
@@ -28,6 +34,7 @@ class PostRegister {
         hashMap.put("email", "eve.holt@reqres.in")
         hashMap.put("password", "pistol")
         Given {
+            spec(specBase())
             contentType(ContentType.JSON)
             body(hashMap)
         } When {
@@ -43,6 +50,7 @@ class PostRegister {
         registerPojo.password = "pistol"
 
         Given {
+            spec(specBase())
             contentType(ContentType.JSON)
             body(registerPojo)
         } When {
@@ -58,6 +66,7 @@ class PostRegister {
         registerPojo.email = "eve.holt@reqres.in"
 
         Given {
+            spec(specBase())
             contentType(ContentType.JSON)
             body(registerPojo)
         } When {
@@ -70,6 +79,7 @@ class PostRegister {
 
     fun register05(registerPojo: RegisterPojo) {
         Given {
+            spec(specBaseToken())
             contentType(ContentType.JSON)
             body(registerPojo)
             log().all()
@@ -84,16 +94,19 @@ class PostRegister {
     val registerFactory = RegisterFactory()
 
     @Test
+    @Tag("success")
     fun registerSuccsessTest() {
         register05(registerFactory.registerSuccess())
     }
 
     @Test
+    @Tag("fail")
     fun registerFailTest() {
         register05(registerFactory.registerUnsuccess())
     }
 
     @Test
+    @Tag("fail")
     fun registerUserNotFound() {
         register05(registerFactory.registerUserNotFound())
     }

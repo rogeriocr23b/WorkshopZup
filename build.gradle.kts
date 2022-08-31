@@ -25,6 +25,18 @@ tasks.test {
     useJUnitPlatform()
 }
 
+tasks.create("successTest", Test::class) {
+    useJUnitPlatform() {
+        includeTags("success")
+    }
+}
+
+tasks.create("failTest", Test::class) {
+    useJUnitPlatform() {
+        includeTags("fail")
+    }
+}
+
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "17"
 }
